@@ -43,8 +43,9 @@
           const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0));
 
           const box = BABYLON.MeshBuilder.CreateBox("box", {});
+          box.position.y = 0.5;  //box created with default size so height is 1
 
-          const ground = BABYLON.MeshBuilder.CreateGround("ground", {width:10, height:10});          
+          const ground = BABYLON.MeshBuilder.CreateGround("ground", {width:10, height:10});
 
           return scene;
         };
