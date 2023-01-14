@@ -50,12 +50,12 @@
           roof.rotation.z = Math.PI / 2;
           roof.position.y = 1.22;
           const roofMat = new BABYLON.StandardMaterial("roofMat");
-          roofMat.diffuseTexture = new BABYLON.Texture("https://assets.babylonjs.com/environments/roof.jpg", scene);
+          roofMat.diffuseTexture = new BABYLON.Texture("assets/texture/roof.jpg", scene);
           const boxMat = new BABYLON.StandardMaterial("boxMat");
-          boxMat.diffuseTexture = new BABYLON.Texture("https://www.babylonjs-playground.com/textures/floor.png");
+          boxMat.diffuseTexture = new BABYLON.Texture("assets/texture/floor.png");
           roof.material = roofMat;
           box.material = boxMat;
-                    
+
           const ground = BABYLON.MeshBuilder.CreateGround("ground", {width:10, height:10});
           const groundMat = new BABYLON.StandardMaterial("groundMat");
           groundMat.diffuseColor = new BABYLON.Color3(0, 1, 0);
